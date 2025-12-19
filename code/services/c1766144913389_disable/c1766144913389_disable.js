@@ -12,7 +12,7 @@
  * @param {CbServer.Resp} resp
  */
 
-function {{component_prefix}}_disable(req, resp) {
+function c1766144913389_disable(req, resp) {
   /** @type {entity_id: string, component_id: string, mfe_settings: Record<string, unknown>} */
   const params = req.params;
   const mfe_settings = params.mfe_settings;

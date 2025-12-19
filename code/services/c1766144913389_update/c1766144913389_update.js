@@ -1,6 +1,6 @@
 /**
  * Type: Micro Service
- * Description: Enable action service for enabling the IA entities 
+ * Description: Update action service for updating the IA entities 
  * Runs as: IA User
  * @param {CbServer.BasicReq} req
  * @param {string} req.systemKey
@@ -12,11 +12,11 @@
  * @param {CbServer.Resp} resp
  */
 
-function {{component_prefix}}_enable(req, resp) {
+function c1766144913389_update(req, resp) {
   /** @type {entity_id: string, component_id: string, mfe_settings: Record<string, unknown>} */
   const params = req.params;
   const mfe_settings = params.mfe_settings;
   console.log('mfe_settings: ', mfe_settings);
-  //component enable behavior here. Enable the component resources
+  //component update behavior here. Allow the user to update an instance of the component
   resp.success('Success');
 }
